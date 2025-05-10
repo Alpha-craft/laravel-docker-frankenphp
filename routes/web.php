@@ -6,5 +6,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/info', function() {
-    return phpinfo();
+    return dd(phpinfo());
 });

@@ -4,9 +4,11 @@ services:
   laravel_franken:
     container_name: laravel_franken
     image: image_laravel_franken
-    build: .
+    build: 
+      dockerfile: worker.Dockerfile
+      context: .
     ports:
-      - 8001:80
+      - 8001:8000
     env_file:
       - .env
       
